@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VideoPrivadoAttrs">
+        <attr name="video_token" format="string" />
+        <attr name="custom_title" format="string" />
+        <attr name="api_token" format="string" />
+    </declare-styleable>
+</resources>

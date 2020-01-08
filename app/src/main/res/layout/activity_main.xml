@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <br.com.yourapp.videosprivados.VideoPrivadoPlayer
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        app:video_token="3dsa34f34565yrgrEDd34Ds53Dghh"
+        app:api_token="HENS3432n432h3b2u384234b203042348jdsknhd"
+        app:custom_title="Titulo do Video"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Videos List"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videosList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
