@@ -26,8 +26,14 @@ Adicione a dependência
 
 ```gradle
 dependencies {
-    compile 'com.github.rafaguedes:videos-privados-android:1.0.0'
+    implementation 'com.github.rafaguedes:videos-privados-android:1.0.0'
 }
+```
+
+Adicione as permissões
+```xml
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
 ```
 
 ## Veja como é simples!
