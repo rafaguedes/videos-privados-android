@@ -28,7 +28,6 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
-
 }
 
 dependencies {
@@ -48,3 +47,5 @@ dependencies {
     api 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'
