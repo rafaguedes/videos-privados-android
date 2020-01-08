@@ -30,7 +30,7 @@ compileOptions {
     targetCompatibility = 1.8
 }
 dependencies {
-    implementation 'com.github.rafaguedes:videos-privados-android:1.0.4'
+    implementation 'com.github.rafaguedes:videos-privados-android:1.0.8'
 }
 ```
 
