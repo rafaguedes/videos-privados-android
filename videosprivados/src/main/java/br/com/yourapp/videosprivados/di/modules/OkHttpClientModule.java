@@ -21,7 +21,6 @@ public class OkHttpClientModule {
     public OkHttpClient okHttpClient(Cache cache, HttpLoggingInterceptor httpLoggingInterceptor) {
         return new OkHttpClient()
                 .newBuilder()
-                .addInterceptor(httpLoggingInterceptor)
                 .cache(cache)
                 .build();
     }
@@ -40,10 +39,7 @@ public class OkHttpClientModule {
 
     @Provides
     public HttpLoggingInterceptor httpLoggingInterceptor() {
-        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(message -> {
-            Log.e(TAG, message);
-            Timber.d(message);
-        });
+        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(message -> {});
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         return httpLoggingInterceptor;
     }
