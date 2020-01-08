@@ -32,8 +32,10 @@ dependencies {
 
 Adicione as permissões
 ```xml
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.INTERNET" />
+<manifest>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
 ```
 
 ## Veja como é simples!
