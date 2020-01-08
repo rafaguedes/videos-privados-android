@@ -13,7 +13,6 @@ Este é nosso diferencial, temos uma plataforma similar a Vimeo, com valor mais 
 ## Como utilizar
 <br />
 Adicione o repositório correto
-
 ```gradle
 allprojects {
     repositories {
@@ -23,7 +22,6 @@ allprojects {
 ```
 
 Adicione a dependência
-
 ```gradle
 dependencies {
     implementation 'com.github.rafaguedes:videos-privados-android:1.0.0'
