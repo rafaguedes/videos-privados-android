@@ -25,8 +25,12 @@ allprojects {
 Adicione a dependência
 
 ```gradle
+compileOptions {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
 dependencies {
-    implementation 'com.github.rafaguedes:videos-privados-android:1.0.0'
+    implementation 'com.github.rafaguedes:videos-privados-android:1.0.1'
 }
 ```
 
