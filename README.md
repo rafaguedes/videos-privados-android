@@ -13,6 +13,7 @@ Este é nosso diferencial, temos uma plataforma similar a Vimeo, com valor mais 
 ## Como utilizar
 <br />
 Adicione o repositório correto
+
 ```gradle
 allprojects {
     repositories {
@@ -22,6 +23,7 @@ allprojects {
 ```
 
 Adicione a dependência
+
 ```gradle
 dependencies {
     implementation 'com.github.rafaguedes:videos-privados-android:1.0.0'
@@ -29,6 +31,7 @@ dependencies {
 ```
 
 Adicione as permissões
+
 ```xml
 <manifest>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -40,6 +43,7 @@ Adicione as permissões
 <br />
 
 Primeiramente você deve inicializar a SDK.
+
 ```java
 VideosPrivadosHelper.getInstance().initialize("YOUR_API_TOKEN", this);
 ```
@@ -47,7 +51,8 @@ VideosPrivadosHelper.getInstance().initialize("YOUR_API_TOKEN", this);
 Depois você pode adicionar via XML ou programaticamente!</br>
 Veja como:
 
-## Basic Configuration
+## Utilizando a SDK
+
 ```xml
 <br.com.yourapp.videosprivados.VideoPrivadoPlayer
     android:id="@+id/videoPlayer"
@@ -60,6 +65,7 @@ Veja como:
 
 ## Via Código
 Obtendo um objeto Video pela seu token
+
 ```java
 VideoPrivadoPlayer videoPlayer;
 VideosPrivadosHelper.getInstance().getVideoByID("VIDEO_TOKEN", new OnVideoLoaded() {
@@ -76,6 +82,7 @@ VideosPrivadosHelper.getInstance().getVideoByID("VIDEO_TOKEN", new OnVideoLoaded
 ```
 
 Obtendo uma lista de vídeos
+
 ```java
 RecyclerView videosList;
 VideosPrivadosHelper.getInstance().getVideosListByPage(1, 10, new OnVideoListLoaded() {
